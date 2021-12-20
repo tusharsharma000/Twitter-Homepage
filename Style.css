@@ -1,0 +1,248 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.Layout {
+    display: grid;
+    grid-template-columns: 275px auto 350px;
+    margin: 0% auto;
+    max-width: 1200px;
+}
+
+.Layout__right-sidebar {
+    position: fixed;
+    width: 350px;
+}
+
+.brand {
+    height: 2rem;
+    width: 2rem;
+    filter: invert(42%) sepia(26%) saturate(4224%) hue-rotate(182deg) brightness(101%) contrast(109%);
+    padding: 10px;
+}
+
+.sidebar-menu {
+    position: fixed;
+}
+
+.sidebar-menu__item {
+    font-size: 19px;
+    color: black;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    padding: 10px;
+}
+.sidebar-menu__item:hover {
+    background:rgba(29, 161, 262, 0.1);
+    color: #1da0f2;
+    border-radius: 200px;
+    cursor: pointer;
+}
+.sidebar-menu__item--active{
+    color: #1da0f2;
+}
+.sidebar-menu__item__home {
+    height: 26px;
+    margin-right: 20px;
+}
+.sidebar-menu__item--active .sidebar-menu__item__home {
+    filter: invert(45%) sepia(78%) saturate(536%) hue-rotate(158deg) brightness(107%) contrast(93%);
+}
+
+
+/* tweet Main */
+
+.Layout__main {
+    border:0.5px solid #e6ecf0 ;
+    border-top-left-radius:15px ;
+    border-top-right-radius: 15px;
+}
+
+.tweet {
+    display: flex;
+    border-bottom: 0.5px solid #e6ecf0;
+    padding: 10px 15px;
+    /* border-radius: 15px; */
+   
+    /* border: 0.5px solid #e6ecf0; */
+}
+
+.tweet__author-logo {
+    /* filter: invert(45%) sepia(78%) saturate(536%) hue-rotate(158deg) brightness(107%) contrast(93%); */
+    /* display: flex;
+    align-items: stretch; */
+    /* filter: invert(19%) sepia(21%) saturate(5277%) hue-rotate(18deg) brightness(102%) contrast(103%); */
+    height: 50px;
+    width: 50px;
+    border-radius: 90%;
+    margin-right: 10px;
+    
+ }
+ .tweet__header {
+     display: flex;
+ }
+ .tweet__author-name {
+     font-size: 15px;
+     font-weight: 700;
+     margin-right: 5px;
+     color: black;
+ }
+ .tweet__author-slug {
+     font-size: 15px;
+     color: grey;
+ }
+ .tweet__publish-time {
+     margin-left: 5px;
+     color: #657786;
+ }
+
+ .tweet__image {
+     width: 100%;
+     border-radius: 15px;
+     margin-top: 10px;
+ }
+
+ .tweet a {
+     color: #1b94e0;
+     text-decoration: none;
+ }
+ .tweet a:hover {
+     text-decoration: underline;
+ }
+ .tweet:hover {
+     background: rgba(0, 0, 0, 0.03);
+     cursor: pointer;
+ }
+
+
+
+ /* Trending Page */
+
+ .trends-for-you {
+   border-radius: 15px;
+   background: #f5f8fa;
+   margin: 15px;
+   
+ }
+
+ .trends-for-you-block {
+  border-bottom: 1px solid #e6ecf0;
+  padding: 10px 20px;
+ }
+ .trends-for-you-block:last-child {
+     border-bottom: none;
+ }
+
+ .trends-for-you-heading {
+  font-size: 19px;
+  font-weight: bold;
+  color: #14171a;
+ }
+
+ .trends-for-you__meta-information {
+  font-size: 13px;
+  font-weight: 350;
+  color: #657786;
+ }
+
+ .trend-for-you__trend-name {
+   font-size: 15px;
+   font-weight: bold;
+   color: #14171a;
+   margin-bottom: 5px;
+   margin-top: 2px;
+ }
+
+
+ /* Who To Follow */
+
+
+ .who-to-follow {
+ background: #f5f8fa;
+ border-radius: 15px;
+ margin-left: 10px;
+ margin-right: 15px;
+ }
+ 
+ .who-to-follow__block {
+     padding: 10px 15px;
+     display: flex;
+     align-items: center;
+     border-bottom: 1px solid #e6ecf0;
+}
+
+.who-to-follow__block:last-child {
+    border-bottom: none;
+}
+
+.who-to-follow__author-logo {
+     height: 50px;
+     width: 50px;
+     border-radius: 50px;
+     margin-right: 10px;
+}
+
+.who-to-follow__content {
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+}
+
+.who-to-follow__heading {
+     font-size: 19px;
+     font-weight: bold;
+     color: #14171a;
+}
+
+.who-to-follow__author-slug {
+ font-size: 15px;
+ color: #657786;
+}
+
+.who-to-follow__author-name{
+font-size: 15px;
+font-weight: bold;
+}
+
+.who-to-follow__button {
+ border: 1px solid #1da0f2;
+ color: #1da0f2;
+ font-size: 15px;
+ font-weight: 700;
+ border-radius: 15px;
+ padding: 5px;
+ min-width: 67px;
+ text-align: center;
+
+
+}
+.who-to-follow__button:hover {
+    background: rgba(29, 161, 242, 0.1);
+    cursor: pointer;
+}
+.Layout__right-sidebar {
+    margin-left: 10px;
+}
+.search-box {
+    /* position: fixed; */
+     border-radius: 15px;
+    padding: 10px ;
+    /* margin-bottom: 30px; */
+    margin-left: 15px;
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+   
+}
+.shruti {
+    
+    appearance: auto;
+    box-sizing: border-box;
+    padding: 1px 2px;
+}
+.image-search {
+    margin-right:5px;
+
+}
